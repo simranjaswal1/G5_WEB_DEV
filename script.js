@@ -26,7 +26,7 @@ console.log("End");
 function grandParent(){
     var a=200;
     console.log(a);
-    //console.log(c);
+    //sconsole.log(c);
     function parent(){
     var b=300;
     console.log(b);
