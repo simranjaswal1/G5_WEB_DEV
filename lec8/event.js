@@ -17,3 +17,6 @@ eventEmitter.emit('start1',5,4);
 eventEmitter.addListener('start2',(x)=>{
     console.log("hello");
 });
+//
+const dns = require('node:dns');
+//dns module assignment use all the functionalities od dns module
