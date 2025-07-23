@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InsightBoard</title>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <a class="menu-link" href="#landing">Dashboard</a>
+    <a class="menu-link" href="#entries">All Posts</a>
+    <div class="menu-link filters-group">
+      <input id="search-bar" type="text" placeholder="Search posts..." />
+      <select id="sort-options">
+        <option value="latest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+        <option value="title">Title A-Z</option>
+        <option value="author">Author A-Z</option>
+      </select>
+    </div>
+  </header>
+
+  <section class="intro" id="landing">
+    <div class="cover">
+      <h1 class="site-title">InsightBoard</h1>
+      <p class="tagline">Discover thoughts. Share yours.</p>
+    </div>
+  </section>
+
+  <section class="submission-area">
+    <form id="post-form">
+      <input type="text" id="post-title" placeholder="Post Title" required/>
+      <input type="text" id="post-author" placeholder="Your Name" required/>
+      <input type="text" id="post-summary" placeholder="Brief Summary" required/>
+      <textarea id="post-content" rows="5" placeholder="Write something awesome..." required></textarea>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </section>
+
+  <section class="all-posts" id="entries">
+    <h2 class="section-header">Your Posts</h2>
+    <div id="post-feed"></div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
